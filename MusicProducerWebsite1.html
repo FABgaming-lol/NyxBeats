@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NyxBeats | Official Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .intro {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .intro h1 {
+      font-size: 4rem;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .intro p {
+      font-size: 1.3rem;
+      color: #bbb;
+      margin-top: 1rem;
+    }
+
+    .about {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 2rem;
+      margin: 3rem auto;
+      width: 90%;
+      max-width: 800px;
+      color: #eee;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .soundcloud {
+      width: 100%;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #1db954;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <video autoplay loop muted playsinline>
+      <source src="your-video.mp4" type="video/mp4" />
+      <!-- Optional: fallback image or text -->
+    </video>
+    <div class="overlay"></div>
+    <div class="intro">
+      <h1>NyxBeats</h1>
+      <p>Producer | Composer | Sound Designer</p>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m NyxBeats, an independent music producer blending cyberpunk vibes with
+      deep bass and melodic textures. I make beats for games, artists, and
+      dreamers. Dive into the soundscape and feel the vibe.
+    </p>
+  </section>
+
+  <section class="soundcloud">
+    <!-- Replace with your actual SoundCloud track or profile embed -->
+    <iframe 
+      width="100%" 
+      height="166" 
+      scrolling="no" 
+      frameborder="no" 
+      allow="autoplay" 
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%2300ffcc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+    </iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 NyxBeats. All rights reserved. | <a href="https://soundcloud.com/YOUR_USERNAME" target="_blank">Listen on SoundCloud</a>
+  </footer>
+</body>
+</html>
